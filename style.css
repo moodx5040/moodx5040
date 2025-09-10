@@ -1,0 +1,92 @@
+/* ===== تنسيق عام ===== */
+body {
+  font-family: "Tahoma", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #0f1c3f, #1e3a8a, #38bdf8);
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* الوضع الليلي */
+body.dark {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* العناوين */
+h1, h2 {
+  margin: 20px 0;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* الصور */
+img {
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+  margin: 20px 0;
+}
+
+/* أزرار عامة */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  background: linear-gradient(135deg, #1e3a8a, #38bdf8);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.6);
+}
+
+/* أزرار خاصة (ألماسي) */
+.btn-diamond {
+  background: linear-gradient(135deg, #00f0ff, #0077ff);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  padding: 40px 60px;
+  font-weight: bold;
+}
+
+/* زر الوضع الليلي */
+.toggle-dark {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 8px 15px;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+} 
+
+/* 🎯 صندوق تسجيل الدخول */
+.login-box {
+  max-width: 350px;
+  margin: 150px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+}
+
+.login-box h1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  outline: none;
+  text-align: center;
+}

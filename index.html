@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <div class="login-box">
+    <h1>🔒 أهلاً بك</h1>
+    <p>من فضلك أدخل كلمة المرور للمتابعة</p>
+
+    <input type="password" id="password" placeholder="كلمة السر">
+    <button onclick="checkPassword()" class="btn">دخول</button>
+
+    <p id="error" style="color:red; display:none; margin-top:10px;">
+      ❌ كلمة السر غير صحيحة
+    </p>
+  </div>
+</body>
+</html>
